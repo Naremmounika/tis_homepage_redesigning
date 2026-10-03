@@ -1,0 +1,508 @@
+.school-story-section {
+  width: 100%;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.school-story-container {
+  max-width: 1250px;
+  min-height: 650px;
+  margin: 0 auto;
+  padding: 80px 6vw;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: center;
+  gap: 70px;
+}
+
+/* Student image */
+
+.school-story-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.school-story-image img {
+  width: min(100%, 520px);
+  height: auto;
+  display: block;
+}
+
+/* Text */
+
+.school-story-content {
+  max-width: 650px;
+}
+
+.school-story-label {
+  margin: 0 0 12px;
+  color: #a9002d;
+  font-size: clamp(20px, 2vw, 28px);
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+.school-story-content h2 {
+  margin: 0;
+  color: #a9002d;
+  font-size: clamp(34px, 4vw, 56px);
+  line-height: 1.05;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+.school-story-description {
+  max-width: 620px;
+  margin: 30px 0 0;
+  color: #555555;
+  font-size: 17px;
+  line-height: 1.75;
+  font-weight: 400;
+}
+
+.school-story-answer {
+  margin: 30px 0 0;
+  color: #159a9c;
+  font-size: clamp(22px, 2.3vw, 30px);
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+/* Statistics */
+
+.statistics-section {
+  width: 100%;
+  background: #ffffff;
+  padding: 0 6vw 100px;
+}
+
+.statistics-container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding-top: 55px;
+  border-top: 1px solid #dedede;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.stat-item {
+  min-height: 170px;
+  padding: 0 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 1px solid #dedede;
+}
+
+.stat-item:last-child {
+  border-right: none;
+}
+
+.stat-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 12px;
+  object-fit: contain;
+}
+
+.stat-number {
+  color: #111111;
+  font-size: 30px;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.stat-item p {
+  max-width: 180px;
+  margin: 10px 0 0;
+  color: #222222;
+  font-size: 10px;
+  line-height: 1.45;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+  .school-story-container {
+    min-height: auto;
+    padding: 70px 30px;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 35px;
+  }
+
+  .school-story-content h2 {
+    font-size: 38px;
+    line-height: 1.05;
+  }
+
+  .school-story-description {
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+  .school-story-answer {
+    font-size: 23px;
+  }
+
+  .statistics-section {
+    padding: 0 30px 80px;
+  }
+
+  .statistics-container {
+    padding-top: 45px;
+  }
+
+  .stat-item {
+    padding: 0 15px;
+  }
+
+  .stat-icon {
+    width: 45px;
+    height: 45px;
+  }
+
+  .stat-number {
+    font-size: 27px;
+  }
+
+  .stat-item p {
+    font-size: 9px;
+  }
+}
+
+/* Small devices */
+
+@media (max-width: 600px) {
+  .school-story-container {
+    min-height: 0;
+    padding: 50px 15px 55px;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .school-story-image {
+    width: 100%;
+  }
+
+  .school-story-image img {
+    width: 100%;
+    max-width: 220px;
+  }
+
+  .school-story-content {
+    width: 100%;
+  }
+
+  .school-story-label {
+    margin-bottom: 8px;
+    font-size: 15px;
+    line-height: 1.25;
+  }
+
+  .school-story-content h2 {
+    font-size: 25px;
+    line-height: 1.08;
+    letter-spacing: -0.03em;
+  }
+
+  .school-story-description {
+    margin-top: 16px;
+    font-size: 11px;
+    line-height: 1.55;
+  }
+
+  .school-story-answer {
+    margin-top: 15px;
+    font-size: 17px;
+    line-height: 1.2;
+  }
+
+  /* Statistics */
+
+  .statistics-section {
+    padding: 0 15px 55px;
+  }
+
+  .statistics-container {
+    padding-top: 35px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .stat-item {
+    min-height: 120px;
+    padding: 0 5px;
+    border-right: 1px solid #dedede;
+  }
+
+  .stat-item:last-child {
+    border-right: none;
+  }
+
+  .stat-icon {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 8px;
+  }
+
+  .stat-number {
+    font-size: 19px;
+    font-weight: 600;
+  }
+
+  .stat-item p {
+    max-width: 75px;
+    margin-top: 7px;
+    font-size: 6px;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+  }
+}
+
+/* Very small devices */
+
+@media (max-width: 380px) {
+  .school-story-container {
+    padding-left: 12px;
+    padding-right: 12px;
+    gap: 12px;
+  }
+
+  .school-story-label {
+    font-size: 13px;
+  }
+
+  .school-story-content h2 {
+    font-size: 22px;
+  }
+
+  .school-story-description {
+    font-size: 10px;
+  }
+
+  .school-story-answer {
+    font-size: 15px;
+  }
+
+  .statistics-section {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .stat-number {
+    font-size: 17px;
+  }
+
+  .stat-icon {
+    width: 27px;
+    height: 27px;
+  }
+
+  .stat-item p {
+    font-size: 5.5px;
+  }
+}
+/* Rankings */
+
+.rankings-section {
+  width: 100%;
+  padding: 75px 6vw 100px;
+  background: #f4eee7;
+  overflow: hidden;
+}
+
+.rankings-heading {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.rankings-heading img {
+  width: 120px;
+  height: 120px;
+  display: block;
+}
+
+.rankings-list {
+  max-width: 1250px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.ranking-item {
+  min-height: 245px;
+  padding: 25px 25px;
+  background: #a9002d;
+  border-radius: 3px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.ranking-item:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 15px 30px rgba(80, 0, 20, 0.18);
+}
+
+.ranking-number {
+  margin-bottom: 14px;
+  color: #ffffff;
+  font-size: 52px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+.ranking-content h3 {
+  margin: 0 0 10px;
+  color: #ffffff;
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.ranking-content p {
+  max-width: 230px;
+  margin: 0 auto;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 1.55;
+  font-weight: 400;
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+  .rankings-section {
+    padding: 65px 30px 80px;
+  }
+
+  .rankings-heading {
+    margin-bottom: 40px;
+  }
+
+  .rankings-heading img {
+    width: 125px;
+  }
+
+  .rankings-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .ranking-item {
+    min-height: 210px;
+    padding: 30px 20px;
+  }
+
+  .ranking-number {
+    font-size: 44px;
+  }
+
+  .ranking-content h3 {
+    font-size: 19px;
+  }
+
+  .ranking-content p {
+    max-width: 210px;
+    font-size: 11px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .rankings-section {
+    padding: 50px 15px 65px;
+  }
+
+  .rankings-heading {
+    margin-bottom: 30px;
+  }
+
+  .rankings-heading img {
+    width: 95px;
+  }
+
+  .rankings-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .ranking-item {
+    min-height: 170px;
+    padding: 22px 10px;
+    border-radius: 3px;
+  }
+
+  .ranking-item:hover {
+    transform: translateY(-4px);
+  }
+
+  .ranking-number {
+    margin-bottom: 9px;
+    font-size: 34px;
+  }
+
+  .ranking-content h3 {
+    margin-bottom: 7px;
+    font-size: 15px;
+  }
+
+  .ranking-content p {
+    max-width: 145px;
+    font-size: 8px;
+    line-height: 1.45;
+  }
+}
+
+/* Very small devices */
+
+@media (max-width: 380px) {
+  .rankings-section {
+    padding: 45px 10px 55px;
+  }
+
+  .rankings-heading img {
+    width: 85px;
+  }
+
+  .rankings-list {
+    gap: 8px;
+  }
+
+  .ranking-item {
+    min-height: 150px;
+    padding: 18px 7px;
+  }
+
+  .ranking-number {
+    font-size: 30px;
+  }
+
+  .ranking-content h3 {
+    font-size: 13px;
+  }
+
+  .ranking-content p {
+    max-width: 125px;
+    font-size: 7px;
+  }
+}

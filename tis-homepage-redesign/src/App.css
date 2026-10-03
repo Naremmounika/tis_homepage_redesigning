@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  background: #ffffff;
+  color: #1b1b1b;
+}
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+}
